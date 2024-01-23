@@ -1,0 +1,28 @@
+.message {
+  box-shadow: 0 0 5px #4f3434;
+  clear: both;
+  margin: 5px;
+  //   border-radius: 12px;
+  padding: 8px;
+  font-size: 15px;
+  &.right {
+    position: relative;
+    background-image: linear-gradient(130deg, #ffffff, #d9edffd9);
+    float: right;
+    border-radius: 15px 15px 2px 15px;
+    color: #4f3434;
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: rgb(250, 250, 247);
+      float: left;
+      border-radius: 2px 15px 15px 15px;
+    }
+  }
+
+  &.left {
+    background-color: rgb(250, 250, 247);
+    float: left;
+    border-radius: 2px 15px 15px 15px;
+  }
+}

@@ -1,0 +1,112 @@
+.global_main_section {
+  width: 100vw;
+  height: 100vh;
+  // background-image: linear-gradient(45deg, #b2cfce, #b9a8cf);
+  background-image: url("../../assets/bg2.jpg");
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  .chat_div {
+    // background-color: #aab1aa;
+    width: 100%;
+    height: 100%;
+    @include for-phone {
+      font-size: 20px;
+      border-bottom: 1px solid #b387ae;
+      padding-bottom: 2px;
+      padding: 6px;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px;
+      /* border-bottom: 2px solid white; */
+      box-shadow: 0px 1px 1px #b387ae;
+      .header_left,
+      .header_right {
+        display: flex;
+        align-items: center;
+        .brandLogo {
+          width: 30px;
+        }
+        .hero_header {
+          margin-left: 8px;
+          font-size: 18px;
+          // border-bottom: 2px solid #ece2ef;
+          color: #ece2ef;
+          padding-bottom: 2px;
+          // padding: 6px;
+          font-family: "Poppins", sans-serif;
+        }
+      }
+      .header_right {
+        span {
+          color: #ece2ef;
+        }
+        img {
+          width: 17px;
+        }
+        span:first-child {
+          // color: #ddd2d2;
+          margin-right: 10px;
+          padding-right: 10px;
+          border-right: 2px solid #eeecec;
+        }
+      }
+    }
+    .message_div {
+      position: relative;
+      font-size: 20px;
+      font-family: monospace;
+      height: 80%;
+      // background-image: url("../../assets/bg6.jpg");
+      // background-repeat: no-repeat;
+      // object-fit: cover;
+      // background-position: center;
+
+      background-image: linear-gradient(45deg, #dfdddd69, #fae4fdc7);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+      margin: 10px;
+      padding: 10px;
+      box-shadow: 0 0 15px #9f8ed3;
+      // border: 1px solid #b387ae;
+      .video_div {
+        position: fixed;
+        background: antiquewhite;
+        height: 150px;
+        width: 170px;
+        right: 25px;
+        border-radius: 4px;
+        padding: 2px;
+      }
+    }
+    .send_btn_div {
+      input {
+        padding: 8px;
+        margin: 0 10px;
+        border-radius: 6px;
+        outline: none;
+        border: none;
+        width: 70%;
+        font-size: 14px;
+      }
+      button {
+        padding: 8px;
+        border: none;
+        border-radius: 6px;
+        width: 23%;
+        font-size: 14px;
+        // background-image: linear-gradient(45deg, #40e9bc, #25bd46);
+        background-image: linear-gradient(45deg, #673ab7, #6facd7);
+      }
+    }
+  }
+}

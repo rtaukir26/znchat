@@ -1,0 +1,14 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: monospace;
+  }
+  
+  /* responsive */
+@mixin for-phone {
+  @media (max-width: 480px) {
+     @content;
+  }
+}
